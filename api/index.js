@@ -35,7 +35,13 @@ app.post('/login', async (req, res) => {
     const userDoc = await User.findOne({username});
     const passOk = bycrypt.compareSync(password, userDoc.password);
     if (passOk) {
-        jwt.sign({username,id:userDoc.id}, secret, (err, token) => {res.cookie('token', token).json('Logged In')});
+        jwt.sign({username,id:userDoc.id}, secret, (err, token) => {
+            if (err) throw err;
+            res.cookie('token', token).json({
+                id: userDoc._id,
+                username,
+            });
+        });
     } else {
         res.status(401).json({message: 'Invalid Credentials'});
     }
