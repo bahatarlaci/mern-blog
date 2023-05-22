@@ -5,3 +5,4 @@ Bu, MERN (MongoDB, Express, React, Node.js) teknolojilerini kullanarak geliştir
 ## Özellikler
 
 - Kullanıcılar, yeni bir hesap oluşturabilir ve giriş yapabilir.
+- Kullanıcılar, yeni bir gönderi oluşturabilir.
