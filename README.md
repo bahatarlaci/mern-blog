@@ -1,8 +1,7 @@
-# MERN Blog Uygulaması
+# MERN Blog Project
 
-Bu, MERN (MongoDB, Express, React, Node.js) teknolojilerini kullanarak geliştirilen bir blog uygulamasıdır. Bu uygulama, kullanıcıların blog yazılarını oluşturmasına, okumasına, düzenlemesine ve silmesine olanak tanır.
+This project is a blog application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
 
-## Özellikler
+## About the Project
 
-- Kullanıcılar, yeni bir hesap oluşturabilir ve giriş yapabilir.
-- Kullanıcılar, yeni bir gönderi oluşturabilir.
+The MERN Blog project provides a platform for users to share their blog posts. It has been developed using modern web technologies and follows a clean code structure.
