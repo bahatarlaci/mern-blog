@@ -95,4 +95,9 @@ app.get('/posts', async (req, res) => {
     );
 });
 
+app.get('/post/:id', async (req, res) => {
+    const {id} = req.params;
+    res.json(await Post.findById(id).populate('author', ['username']));
+});
+
 app.listen(4000);
